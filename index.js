@@ -342,3 +342,32 @@ console.log(typeof obj); //will output object
 // parsed= JSON.parse(`{"name":"sumant","length":1,"a":{"this":"that"}}`)
 parsed= JSON.parse(jso)
 console.log(parsed); 
+
+
+
+
+
+
+
+
+//promises
+function hue(){
+    a=15;
+    return new Promise(function(resolve,reject){
+        if(a>10)
+        {
+            console.log("Fun: reject");
+            reject("Sorry");
+        }
+        else{
+            console.log("Fun: Resolved");
+            resolve();
+        }
+    })
+}
+
+hue().then(function(){      //.then happens when resolved and .catch() when rejected
+    console.log("callback succesfull")
+}).catch(function(error){    //this function is reject(); which took sry   here error is string which is sorry
+    console.log("OOps "+ error)
+})
