@@ -7,7 +7,7 @@ let name= prompt("What?","Guest"); //gives a fill in the blanks asking whatt?//w
 let deletePost =confirm("do you want to delete?");  //asks the question 
 console.log(deletePost)//if user clicked ok then true is printed
 
-// letiables and data types
+// variables and data types
 
 
 //declaration
@@ -69,7 +69,7 @@ console.log(f,t);
 let und=undefined;
 let u;
 console.log(und);
-console.log(u); // by defaut if not initialized then the value of the letiable is undefined
+console.log(u); // by defaut if not initialized then the value of the variable is undefined
 let n= null; // DO NOT USE "NULL" ONLY USE "null"
 console.log(n);
 
@@ -120,6 +120,7 @@ console.log(c1);
 
 
 //default arguements in functions
+//default value is the 2nd arguement
 function avg(a,b=3){
     return (a+b)/2;
 }
@@ -136,7 +137,7 @@ if(a<50)
 }
 
 //loops
-// for loops for(i=0;i<arr.length();i++){} same as c++
+// for loops for(i=0;i<arr.length();i++){ } same as c++
 
 // for each loop 
 arr.forEach(function fun(element){
@@ -158,17 +159,16 @@ let marks={
 }
 
 for(key in marks){
-    console.log(`The ${key} and ${marks[key]}`)
+    console.log(`The ${key} and ${marks[key]}`) 
 }
 //${key} prints key revi,sumant,harry and ${marks[key]} the value
-
 
 
 
 // use let instead of var
 
 //while and do while loop same as c++
-let j=0; // let is local letiable and let global
+let j=0; // let is local variable and let global
 
 //break and continue same as c++
 
@@ -223,7 +223,7 @@ let newstring= mystring.concat(' Hue hue'); //ads hue hue to end but use "+" ins
 console.log(newstring);// just a reminder that new strings can be made
 console.log(mystring.trim());// removes white spaces from beginning and end
 let char2= mystring.charAt(2); // returns character at index 2
-let char2= mystring.charCodeAt(2); // returns character code(ASCII) at index 2
+let char3= mystring.charCodeAt(2); // returns character code(ASCII) at index 2
 console.log(mystring[3])// this exists too
 
 
@@ -261,7 +261,7 @@ setInterval(displaydate,1000);
 
 
 // Local Storage
-localStorage.setItem('name','sumant'); //sets local storage with name sumant
+localStorage.setItem('name','sumant'); //shets local storage wit name sumant
 localStorage.getItem('name');// gets the name of the storage
 localStorage.removeItem('name'); //removes  item
 localStorage.clear(); // clears all storage
@@ -330,7 +330,7 @@ let num= a + (b-a)*Math.Random()
 
 
 
-//JSON
+//JSON ignore
 //JSON only accepts double quotes if you give single quotes it will use \
 //obj={name: "sumant", length: 1} a simple object obj
 obj={name: "sumant", length: 1, a:{"this": "that"}} // "a" ia object inside another object obj
@@ -350,7 +350,7 @@ console.log(parsed);
 
 
 
-//promises
+//promises(ignore)
 function hue(){
     a=15;
     return new Promise(function(resolve,reject){
